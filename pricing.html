@@ -1,0 +1,402 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Mini Finance - Transaction Detail</title>
+
+    <!-- CSS FILES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="css/bootstrap-icons.css" rel="stylesheet">
+
+    <link href="css/apexcharts.css" rel="stylesheet">
+
+    <link href="css/tooplate-mini-finance.css" rel="stylesheet">
+    <!--
+
+    Tooplate 2135 Mini Finance
+
+    https://www.tooplate.com/view/2135-mini-finance
+
+    Bootstrap 5 Dashboard Admin Template
+
+    -->
+</head>
+
+<body>
+<header class="navbar sticky-top flex-md-nowrap">
+    <div class="col-md-3 col-lg-3 me-0 px-3 fs-6">
+        <a class="navbar-brand" href="index.html">
+            <i class="bi-box"></i>
+            Mini Finance
+        </a>
+    </div>
+
+    <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false"
+            aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <form class="custom-form header-form ms-lg-3 ms-md-3 me-lg-auto me-md-auto order-2 order-lg-0 order-md-0" action="#"
+          method="get" role="form">
+        <input class="form-control" name="search" type="text" placeholder="Search" aria-label="Search">
+    </form>
+
+    <div class="navbar-nav me-lg-2">
+        <div class="nav-item text-nowrap d-flex align-items-center">
+            <div class="dropdown ps-3">
+                <a class="nav-link dropdown-toggle text-center" href="#" role="button" data-bs-toggle="dropdown"
+                   aria-expanded="false">
+                    <i class="bi-bell"></i>
+                    <span class="position-absolute start-100 translate-middle p-1 bg-danger border border-light rounded-circle">
+                                <span class="visually-hidden">New alerts</span>
+                            </span>
+                </a>
+
+                <ul class="dropdown-menu notifications-block-wrap bg-white shadow">
+                    <small>Notifications</small>
+
+                    <li class="notifications-block border-bottom pb-2 mb-2">
+                        <a class="dropdown-item d-flex align-items-center" href="#">
+                            <div class="notifications-icon-wrap bg-success">
+                                <i class="notifications-icon bi-check-circle-fill"></i>
+                            </div>
+
+                            <div>
+                                <span>Your account has been created successfuly.</span>
+
+                                <p>2 days ago</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="notifications-block border-bottom pb-2 mb-2">
+                        <a class="dropdown-item d-flex align-items-center" href="#">
+                            <div class="notifications-icon-wrap bg-info">
+                                <i class="notifications-icon bi-folder"></i>
+                            </div>
+
+                            <div>
+                                <span>Please check. We have sent Daily report.</span>
+
+                                <p>10 days ago</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="notifications-block">
+                        <a class="dropdown-item d-flex align-items-center" href="#">
+                            <div class="notifications-icon-wrap bg-danger">
+                                <i class="notifications-icon bi-question-circle"></i>
+                            </div>
+
+                            <div>
+                                <span>Account verification failed.</span>
+
+                                <p>1 hour ago</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="dropdown ps-1">
+                <a class="nav-link dropdown-toggle text-center" href="#" role="button" data-bs-toggle="dropdown"
+                   aria-expanded="false">
+                    <i class="bi-three-dots-vertical"></i>
+                </a>
+
+                <div class="dropdown-menu dropdown-menu-social bg-white shadow">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4 col-4">
+                                <a class="dropdown-item text-center" href="#">
+                                    <img src="images/social/search.png" class="profile-image img-fluid" alt="">
+                                    <span class="d-block">Google</span>
+                                </a>
+                            </div>
+
+                            <div class="col-lg-4 col-md-4 col-4">
+                                <a class="dropdown-item text-center" href="#">
+                                    <img src="images/social/spotify.png" class="profile-image img-fluid" alt="">
+                                    <span class="d-block">Spotify</span>
+                                </a>
+                            </div>
+
+                            <div class="col-lg-4 col-md-4 col-4">
+                                <a class="dropdown-item text-center" href="#">
+                                    <img src="images/social/telegram.png" class="profile-image img-fluid" alt="">
+                                    <span class="d-block">Telegram</span>
+                                </a>
+                            </div>
+
+                            <div class="col-lg-4 col-md-4 col-4">
+                                <a class="dropdown-item text-center" href="#">
+                                    <img src="images/social/snapchat.png" class="profile-image img-fluid" alt="">
+                                    <span class="d-block">Snapchat</span>
+                                </a>
+                            </div>
+
+                            <div class="col-lg-4 col-md-4 col-4">
+                                <a class="dropdown-item text-center" href="#">
+                                    <img src="images/social/tiktok.png" class="profile-image img-fluid" alt="">
+                                    <span class="d-block">Tiktok</span>
+                                </a>
+                            </div>
+
+                            <div class="col-lg-4 col-md-4 col-4">
+                                <a class="dropdown-item text-center" href="#">
+                                    <img src="images/social/youtube.png" class="profile-image img-fluid" alt="">
+                                    <span class="d-block">Youtube</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dropdown px-3">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                   aria-expanded="false">
+                    <img src="images/medium-shot-happy-man-smiling.jpg" class="profile-image img-fluid" alt="">
+                </a>
+                <ul class="dropdown-menu bg-white shadow">
+                    <li>
+                        <div class="dropdown-menu-profile-thumb d-flex">
+                            <img src="images/medium-shot-happy-man-smiling.jpg" class="profile-image img-fluid me-3"
+                                 alt="">
+
+                            <div class="d-flex flex-column">
+                                <small>Thomas</small>
+                                <a href="#">thomas@site.com</a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <a class="dropdown-item" href="profile.html">
+                            <i class="bi-person me-2"></i>
+                            Profile
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="dropdown-item" href="setting.html">
+                            <i class="bi-gear me-2"></i>
+                            Settings
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="dropdown-item" href="help-center.html">
+                            <i class="bi-question-circle me-2"></i>
+                            Help
+                        </a>
+                    </li>
+
+                    <li class="border-top mt-3 pt-2 mx-4">
+                        <a class="dropdown-item ms-0 me-0" href="#">
+                            <i class="bi-box-arrow-left me-2"></i>
+                            Logout
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="container-fluid">
+    <div class="row">
+
+        <main class="main-wrapper col-md-12 ms-sm-auto py-4 col-lg-12 px-md-4 border-start">
+            <div class="title-group mb-3">
+                <h1 class="h2 mb-0">Pricing List</h1>
+            </div>
+
+            <div class="row my-4">
+                <div class="col-lg-12 col-12">
+                    <div class="custom-block custom-block-transation-detail bg-white">
+                        <div style="display: flex; justify-content: center; flex-direction: column; align-items: center;">
+                            <span class="pricing_header_span">choose a right pack</span>
+                            <h1 class="pricing_header_h1">our flexible pricing plans</h1>
+                        </div>
+                        <div class="pricing_table">
+                            <div class="card__container grid">
+                                <!--==================== CARD 1 ====================-->
+                                <article class="card__content grid">
+                                    <div class="card__pricing">
+                                        <div class="card__pricing-number">
+                                            <span class="card__pricing-symbol">$</span>0
+                                        </div>
+                                        <span class="card__pricing-month">/month</span>
+                                    </div>
+
+                                    <header class="card__header">
+                                        <div class="card__header-circle grid">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                                                <path fill-rule="evenodd" d="M3 6a3 3 0 0 1 3-3h12a3 3 0 0 1 3 3v12a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3V6Zm4.5 7.5a.75.75 0 0 1 .75.75v2.25a.75.75 0 0 1-1.5 0v-2.25a.75.75 0 0 1 .75-.75Zm3.75-1.5a.75.75 0 0 0-1.5 0v4.5a.75.75 0 0 0 1.5 0V12Zm2.25-3a.75.75 0 0 1 .75.75v6.75a.75.75 0 0 1-1.5 0V9.75A.75.75 0 0 1 13.5 9Zm3.75-1.5a.75.75 0 0 0-1.5 0v9a.75.75 0 0 0 1.5 0v-9Z" clip-rule="evenodd"></path>
+                                            </svg>
+                                        </div>
+
+                                        <span class="card__header-subtitle">Free plan</span>
+                                        <h1 class="card__header-title">Basic</h1>
+                                    </header>
+
+                                    <ul class="card__list grid">
+                                        <li class="card__list-item">
+                                            <i class="uil uil-check card__list-icon"></i>
+                                            <p class="card__list-description">3 user request</p>
+                                        </li>
+                                        <li class="card__list-item">
+                                            <i class="uil uil-check card__list-icon"></i>
+                                            <p class="card__list-description">10 downloads por day</p>
+                                        </li>
+                                        <li class="card__list-item">
+                                            <i class="uil uil-check card__list-icon"></i>
+                                            <p class="card__list-description">Daily content updates</p>
+                                        </li>
+                                        <li class="card__list-item">
+                                            <i class="uil uil-check card__list-icon"></i>
+                                            <p class="card__list-description">Fully editable files</p>
+                                        </li>
+                                    </ul>
+
+                                    <button class="card__button">Choose this plan</button>
+                                </article>
+
+                                <!--==================== CARD 2 ====================-->
+                                <article class="card__content grid">
+                                    <div class="card__pricing">
+                                        <div class="card__pricing-number">
+                                            <span class="card__pricing-symbol">$</span>19
+                                        </div>
+                                        <span class="card__pricing-month">/month</span>
+                                    </div>
+
+                                    <header class="card__header">
+                                        <div class="card__header-circle grid">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                                                <path d="M5.25 6.375a4.125 4.125 0 1 1 8.25 0 4.125 4.125 0 0 1-8.25 0ZM2.25 19.125a7.125 7.125 0 0 1 14.25 0v.003l-.001.119a.75.75 0 0 1-.363.63 13.067 13.067 0 0 1-6.761 1.873c-2.472 0-4.786-.684-6.76-1.873a.75.75 0 0 1-.364-.63l-.001-.122ZM18.75 7.5a.75.75 0 0 0-1.5 0v2.25H15a.75.75 0 0 0 0 1.5h2.25v2.25a.75.75 0 0 0 1.5 0v-2.25H21a.75.75 0 0 0 0-1.5h-2.25V7.5Z"></path>
+                                            </svg>
+                                        </div>
+
+                                        <span class="card__header-subtitle">Most popular</span>
+                                        <h1 class="card__header-title">Professional</h1>
+                                    </header>
+
+                                    <ul class="card__list grid">
+                                        <li class="card__list-item">
+                                            <i class="uil uil-check card__list-icon"></i>
+                                            <p class="card__list-description">100 user request</p>
+                                        </li>
+                                        <li class="card__list-item">
+                                            <i class="uil uil-check card__list-icon"></i>
+                                            <p class="card__list-description">Unlimited downloads</p>
+                                        </li>
+                                        <li class="card__list-item">
+                                            <i class="uil uil-check card__list-icon"></i>
+                                            <p class="card__list-description">Unlock all features from our site</p>
+                                        </li>
+                                        <li class="card__list-item">
+                                            <i class="uil uil-check card__list-icon"></i>
+                                            <p class="card__list-description">Daily content updates</p>
+                                        </li>
+                                        <li class="card__list-item">
+                                            <i class="uil uil-check card__list-icon"></i>
+                                            <p class="card__list-description">Fully editable files</p>
+                                        </li>
+                                    </ul>
+
+                                    <button class="card__button">Choose this plan</button>
+                                </article>
+
+                                <!--==================== CARD 3 ====================-->
+                                <article class="card__content grid">
+                                    <div class="card__pricing">
+                                        <div class="card__pricing-number">
+                                            <span class="card__pricing-symbol">$</span>29
+                                        </div>
+                                        <span class="card__pricing-month">/month</span>
+                                    </div>
+
+                                    <header class="card__header">
+                                        <div class="card__header-circle grid">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                                                <path fill-rule="evenodd" d="M9 4.5a.75.75 0 0 1 .721.544l.813 2.846a3.75 3.75 0 0 0 2.576 2.576l2.846.813a.75.75 0 0 1 0 1.442l-2.846.813a3.75 3.75 0 0 0-2.576 2.576l-.813 2.846a.75.75 0 0 1-1.442 0l-.813-2.846a3.75 3.75 0 0 0-2.576-2.576l-2.846-.813a.75.75 0 0 1 0-1.442l2.846-.813A3.75 3.75 0 0 0 7.466 7.89l.813-2.846A.75.75 0 0 1 9 4.5ZM18 1.5a.75.75 0 0 1 .728.568l.258 1.036c.236.94.97 1.674 1.91 1.91l1.036.258a.75.75 0 0 1 0 1.456l-1.036.258c-.94.236-1.674.97-1.91 1.91l-.258 1.036a.75.75 0 0 1-1.456 0l-.258-1.036a2.625 2.625 0 0 0-1.91-1.91l-1.036-.258a.75.75 0 0 1 0-1.456l1.036-.258a2.625 2.625 0 0 0 1.91-1.91l.258-1.036A.75.75 0 0 1 18 1.5ZM16.5 15a.75.75 0 0 1 .712.513l.394 1.183c.15.447.5.799.948.948l1.183.395a.75.75 0 0 1 0 1.422l-1.183.395c-.447.15-.799.5-.948.948l-.395 1.183a.75.75 0 0 1-1.422 0l-.395-1.183a1.5 1.5 0 0 0-.948-.948l-1.183-.395a.75.75 0 0 1 0-1.422l1.183-.395c.447-.15.799-.5.948-.948l.395-1.183A.75.75 0 0 1 16.5 15Z" clip-rule="evenodd"></path>
+                                            </svg>
+                                        </div>
+
+                                        <span class="card__header-subtitle">For agencies</span>
+                                        <h1 class="card__header-title">Enterprise</h1>
+                                    </header>
+
+                                    <ul class="card__list grid">
+                                        <li class="card__list-item">
+                                            <i class="uil uil-check card__list-icon"></i>
+                                            <p class="card__list-description">Unlimited user request</p>
+                                        </li>
+                                        <li class="card__list-item">
+                                            <i class="uil uil-check card__list-icon"></i>
+                                            <p class="card__list-description">Unlimited downloads</p>
+                                        </li>
+                                        <li class="card__list-item">
+                                            <i class="uil uil-check card__list-icon"></i>
+                                            <p class="card__list-description">Unlock all features from our site</p>
+                                        </li>
+                                        <li class="card__list-item">
+                                            <i class="uil uil-check card__list-icon"></i>
+                                            <p class="card__list-description">Daily content updates</p>
+                                        </li>
+                                        <li class="card__list-item">
+                                            <i class="uil uil-check card__list-icon"></i>
+                                            <p class="card__list-description">Fully editable files</p>
+                                        </li>
+                                    </ul>
+
+                                    <button class="card__button">Choose this plan</button>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <footer class="site-footer">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-12 col-12">
+                            <p class="copyright-text">Copyright © Mini Finance 2048
+                                - Design: <a rel="sponsored" href="https://www.tooplate.com"
+                                             target="_blank">Tooplate</a></p>
+                        </div>
+
+                    </div>
+                </div>
+            </footer>
+        </main>
+
+    </div>
+</div>
+
+<!-- JAVASCRIPT FILES -->
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/apexcharts.min.js"></script>
+<script src="js/custom.js"></script>
+
+</body>
+</html>
