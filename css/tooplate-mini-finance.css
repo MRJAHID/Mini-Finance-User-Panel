@@ -1171,7 +1171,6 @@ strong {
   --container-color: #FFF;
 
   /*========== Font and typography ==========*/
-  --body-font: 'Lato', sans-serif;
   --pricing-font: 'Rubik', sans-serif;
   --biggest-font-size: 1.75rem;
   --normal-font-size: .938rem;
@@ -1426,4 +1425,175 @@ strong {
   .pricing_table .card__header-subtitle {
     font-size: var(--small-font-size);
   }
+}
+
+/*---------------------------------------
+  SERVICES TABLE
+-----------------------------------------*/
+.services_list .cards-grid {
+  font-family: sans-serif;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  justify-content: center;
+}
+.services_list .card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: box-shadow 0.3s ease;
+}
+.services_list .card:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+.services_list .card-header {
+  background-color: #2c3e50;
+  color: white;
+  padding: 24px;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .services_list .card-header {
+    padding: 20px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .services_list .card-header {
+    padding: 16px;
+  }
+}
+
+.services_list .card-title {
+  font-size: 24px;
+  font-weight: 400;
+  color: #fff;
+  margin: 0 0 8px 0;
+}
+
+
+@media screen and (max-width: 750px) {
+  .services_list .card-title {
+    font-size: 21px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .services_list .card-title {
+    font-size: 19px;
+  }
+}
+
+
+.services_list .card-price {
+  font-size: 24px;
+  font-weight: 500;
+  color: #fff;
+  margin: 0;
+}
+@media screen and (max-width: 750px) {
+  .services_list .card-price {
+    font-size: 19px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .services_list .card-price {
+    font-size: 17px;
+  }
+}
+
+.services_list .card-content {
+  padding: 24px;
+}
+.services_list .sub-services {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 0 24px 0;
+}
+.services_list .sub-service-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+@media screen and (max-width: 768px) {
+  .services_list .sub-service-item span {
+   font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .services_list .sub-service-item span {
+    font-size: 16px;
+  }
+}
+
+.services_list .sub-service-item:last-child {
+  border-bottom: none;
+}
+.services_list .view-button {
+  background-color: transparent;
+  border: none;
+  color: #2c3e50;
+  cursor: pointer;
+  font-family: 'Georgia', serif;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+.services_list .view-button:hover {
+  color: #000;
+  background: gainsboro;
+  border-radius: 3px;
+}
+.services_list .card-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 26px 12px;
+}
+
+
+@media screen and (max-width: 400px) {
+  .services_list .card-footer {
+    padding: 12px 8px 12px;
+  }
+}
+
+.services_list .button {
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-family: 'Georgia', serif;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+.services_list .button-outline {
+  background-color: transparent;
+  border: 2px solid #2c3e50;
+  color: #2c3e50;
+}
+.services_list .button-outline:hover {
+  background-color: #2c3e50;
+  color: white;
+}
+.services_list .button-primary {
+  background-color: #2c3e50;
+  border: none;
+  color: white;
+}
+.services_list .button-primary:hover {
+  background-color: #34495e;
+}
+.services_list .icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
 }
