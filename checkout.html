@@ -386,7 +386,7 @@
 
                                         <h3>Payment Methods</h3>
                                         <div class="payment-methods">
-<!--                                            -->
+                                            <!--                                            -->
                                             <div class="payment-method">
                                                 <input type="radio" id="bkash" name="payment" value="bkash">
                                                 <label for="bkash">Mobile Payment</label>
@@ -401,7 +401,8 @@
                                             <form>
                                                 <div class="form-group">
                                                     <label for="card-number">Card Number</label>
-                                                    <input type="text" id="card-number" placeholder="1234 5647 8934 XXXX">
+                                                    <input type="text" id="card-number"
+                                                           placeholder="1234 5647 8934 XXXX">
                                                 </div>
 
                                                 <div class="form-group">
@@ -421,7 +422,8 @@
                                                     <div class="form-group">
                                                         <label for="otp">OTP</label>
                                                         <input type="text" id="otp" placeholder="193467">
-                                                        <p style="color: #007bff; font-size: 12px; margin-top: 5px;">No one else OTP with anyone</p>
+                                                        <p style="color: #007bff; font-size: 12px; margin-top: 5px;">No
+                                                            one else OTP with anyone</p>
                                                     </div>
                                                 </div>
 
@@ -445,19 +447,35 @@
                                             </div>
                                         </div>
 
+                                        <!--  Bkash Payment  -->
                                         <div id="upsContent">
                                             <form>
+
+                                                <div class="bkash_instrctn">
+                                                    <p>Open the bKash app on your smartphone or dial *247#.</p>
+                                                    <p>On the home screen, tap on the 'Send Money'.</p>
+                                                    <p>Enter our bKash number: +8801973-349642.</p>
+                                                    <p>Type the amount in the amount field.</p>
+                                                    <p>Enter a reference for the payment: Review the Payment Details and
+                                                        ensure
+                                                        everything is correct. Tap 'Confirm' to proceed with the
+                                                        payment.</p>
+                                                    <p>Enter your 4-digit bKash PIN to authorize the transaction. After
+                                                        complete the
+                                                        bKash payment, mention the bKash number in the form.</p><br/>
+                                                </div>
+
                                                 <div class="form-group">
-                                                    <label for="ups-tracking">UPS Tracking Number</label>
-                                                    <input type="text" id="ups-tracking" placeholder="1Z999AA1123456789">
+                                                    <label for="ups-tracking">Bkash Merchant Number</label>
+                                                    <input type="text" id="ups-tracking" placeholder="+8801973-349642">
                                                 </div>
                                                 <div class="form-group">
-                                                    <label for="ups-service">UPS Service Type</label>
-                                                    <input type="text" id="ups-service" placeholder="UPS Ground">
+                                                    <label for="ups-service">Payment Trx Id</label>
+                                                    <input type="text" id="ups-service" placeholder="ksnnsdnksl22">
                                                 </div>
                                                 <div class="form-group">
-                                                    <label for="ups-weight">Package Weight (lbs)</label>
-                                                    <input type="text" id="ups-weight" placeholder="5.0">
+                                                    <label for="ups-weight">Reference Code</label>
+                                                    <input type="text" id="ups-weight" placeholder="5517">
                                                 </div>
                                             </form>
                                         </div>
@@ -470,10 +488,12 @@
                                     <h2 class="section-title">Confirmation</h2>
 
                                     <div class="payment_success_card">
-                                        <img src="./images/confirmorder.svg" alt="Success illustration" class="illustration">
+                                        <img src="./images/confirmorder.svg" alt="Success illustration"
+                                             class="illustration">
                                         <h1>Payment Successful... ☀️</h1>
                                         <p>
-                                            You can track your order with Order ID <a href="#">SPKPFR</a> from <a href="#">Track Order</a>
+                                            You can track your order with Order ID <a href="#">SPKPFR</a> from <a
+                                                href="#">Track Order</a>
                                         </p>
                                         <p>Thank you for shopping with us.</p>
                                         <button class="button">Continue 🛍️</button>

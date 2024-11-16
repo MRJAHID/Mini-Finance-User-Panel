@@ -2165,3 +2165,10 @@ strong {
 .payment_success_card .button:hover {
     background-color: #2E9567;
 }
+
+.bkash_instrctn p{
+    color: #4c4949;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 400;
+}
