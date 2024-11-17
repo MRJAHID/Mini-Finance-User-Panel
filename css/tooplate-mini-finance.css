@@ -2210,3 +2210,100 @@ strong {
     line-height: 24px;
     font-weight: 400;
 }
+
+
+/*---------------------------------------
+  Invoice CSS
+-----------------------------------------*/
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+
+.invoice_content div, p, a, li, td {
+    -webkit-text-size-adjust: none;
+}
+
+.invoice_content .ReadMsgBody {
+    width: 100%;
+    background-color: #ffffff;
+}
+
+.invoice_content .ExternalClass {
+    width: 100%;
+    background-color: #ffffff;
+}
+
+
+
+.invoice_content p {
+    padding: 0 !important;
+    margin-top: 0 !important;
+    margin-right: 0 !important;
+    margin-bottom: 0 !important;
+    margin-left: 0 !important;
+}
+
+.invoice_content .visibleMobile {
+    display: none;
+}
+
+.invoice_content .hiddenMobile {
+    display: block;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .invoice_content table[class=fullTable] {
+        width: 96% !important;
+        clear: both;
+    }
+
+    .invoice_content table[class=fullPadding] {
+        width: 85% !important;
+        clear: both;
+    }
+
+    .invoice_content table[class=col] {
+        width: 45% !important;
+    }
+
+    .invoice_content .erase {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .invoice_content table[class=fullTable] {
+        width: 100% !important;
+        clear: both;
+    }
+
+    .invoice_content table[class=fullPadding] {
+        width: 85% !important;
+        clear: both;
+    }
+
+    .invoice_content table[class=col] {
+        width: 100% !important;
+        clear: both;
+    }
+
+    .invoice_content table[class=col] td {
+        text-align: left !important;
+    }
+
+    .invoice_content .erase {
+        display: none;
+        font-size: 0;
+        max-height: 0;
+        line-height: 0;
+        padding: 0;
+    }
+
+    .invoice_content .visibleMobile {
+        display: block !important;
+    }
+
+    .invoice_content .hiddenMobile {
+        display: none !important;
+    }
+}
