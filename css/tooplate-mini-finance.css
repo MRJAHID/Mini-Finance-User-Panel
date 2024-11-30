@@ -1952,12 +1952,9 @@ strong {
 
 /* Checkout Form */
 .checkout_personal_info form {
-    /*max-width: 800px;*/
     margin: 0 auto;
     background-color: white;
-    /*padding: 20px;*/
     border-radius: 8px;
-    /*box-shadow: 0 0 10px rgba(0,0,0,0.1);*/
 }
 
 .checkout_personal_info .form-row {
@@ -2307,3 +2304,249 @@ strong {
         display: none !important;
     }
 }
+
+
+
+/*---------------------------------------
+  Application List CSS
+-----------------------------------------*/
+
+
+.nap_applicatin {
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: system-ui;
+}
+
+.nap_applicatin .table-container {
+    background: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.nap_applicatin .table-wrapper {
+    overflow-x: auto;
+}
+
+.nap_applicatin table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.nap_applicatin thead {
+    background-color: #e6f7f5;
+}
+
+.nap_applicatin th {
+    padding: 0.75rem 1rem;
+    text-align: left;
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    color: #115e59;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+}
+
+.nap_applicatin td {
+    padding: 1rem 1rem;
+    white-space: nowrap;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.nap_applicatin tbody tr:nth-child(even) {
+    background-color: #f9fafb;
+}
+
+.nap_applicatin .service-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+
+.nap_applicatin .date {
+    font-weight: 500;
+    color: #1f2937;
+}
+
+.nap_applicatin .service-name {
+    color: #6b7280;
+    font-weight: 400;
+}
+
+.nap_applicatin .payment-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+
+.nap_applicatin .trx-id {
+    color: #1f2937;
+    font-size: 0.91rem;
+}
+
+.nap_applicatin .amount {
+    font-weight: 500;
+    color: #1f2937;
+}
+
+.nap_applicatin .badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.22rem 0.65rem;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
+.nap_applicatin .badge-info {
+    background-color: #0369a1;
+    color: #FFF;
+}
+
+.nap_applicatin .badge-success {
+    background-color: #2c8d4d;
+    color: #ffffff;
+}
+
+.nap_applicatin .badge-pending {
+    background-color: #c93636;
+    color: #ffffff;
+}
+
+.nap_applicatin .badge-error {
+    background-color: #c93636;
+    color: #ffffff;
+}
+
+.nap_applicatin .view-button {
+    color: #0d9488;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.4rem;
+    border-radius: 0.375rem;
+    transition: all 0.2s;
+}
+
+.nap_applicatin .view-button:hover {
+    color: #134e4a;
+    background-color: #f0fdfa;
+}
+
+.nap_applicatin .view-icon {
+    width: 1.25rem;
+    height: 1.25rem;
+}
+
+/* Mobile Card */
+.nap_applicatin_mobile{
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr; /* 3 items per row */
+
+    @media screen and (min-width: 500px) {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+
+    @media screen and (min-width: 850px) {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+    }
+
+}
+.nap_applicatin_mobile .card {
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 100%;
+    max-width: 400px;
+    font-family: sans-serif;
+
+    @media screen and (max-width: 500px) {
+        margin-bottom: 1rem;
+    }
+}
+
+/* Header Section */
+.nap_applicatin_mobile .card-header {
+    background-color: #7e3af2;
+    color: #ffffff;
+    text-align: center;
+    padding: 2rem;
+}
+
+.nap_applicatin_mobile .card-header h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 6px;
+}
+
+.nap_applicatin_mobile .card-header p {
+    font-size: 14px;
+    margin-top: 5px;
+    color: #fff;
+}
+
+/* Body Section */
+.nap_applicatin_mobile .card-body {
+    padding: 20px;
+    text-align: center;
+}
+
+.nap_applicatin_mobile .card-body h1 {
+    font-size: 28px;
+    font-weight: 500;
+    color: #000000;
+    margin: 0 0 13px;
+}
+
+.nap_applicatin_mobile .transaction-id {
+    font-size: 14px;
+    color: #666666;
+    margin-bottom: 15px;
+}
+
+.nap_applicatin_mobile .tags {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.nap_applicatin_mobile .tag {
+    background-color: #f0f4ff;
+    color: #7e3af2;
+    border-radius: 20px;
+    padding: 5px 10px;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+/* Footer Section */
+.nap_applicatin_mobile .card-footer {
+    background-color: #f5f5f5;
+    text-align: center;
+    padding: 15px;
+}
+
+.nap_applicatin_mobile .card-footer button {
+    background-color: #7e3af2;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.nap_applicatin_mobile .card-footer button:hover {
+    background-color: #5a2ea6;
+}
+
