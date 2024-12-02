@@ -106,3 +106,17 @@
       }
     });
   });
+
+
+
+  // Invoice Check Design
+  $(document).ready(function () {
+    $(".step").each(function (index, element) {
+      // element == this
+      $(element).not(".active").addClass("done");
+      $(".done").html('<i class="bi bi-check2"></i>');
+      if ($(this).is(".active")) {
+        return false;
+      }
+    });
+  });
